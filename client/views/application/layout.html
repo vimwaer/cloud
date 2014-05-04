@@ -15,8 +15,10 @@
 		<!-- Toolbar right -->
 		<div class="toolbar right">
 			<ul class="tools">
-				<li><a href="" class="tool green"><span class="glyphicon glyphicon-off"></span></a></li>
-	<li>{{>loginButtons align="right"}}</li>
+				{{#if currentUser}}
+				<li><a href="{{pathFor 'postSubmit'}}" class="tool green"><span class="glyphicon glyphicon-plus"></span></a></li>
+				{{/if}}
+				<li>{{>loginButtons align="right"}}</li>
 			</ul>
 		</div>
 
