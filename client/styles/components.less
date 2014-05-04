@@ -1,0 +1,67 @@
+/* 
+
+COMPONENTS
+
+*/
+
+
+.fixed {
+	position:fixed;
+	
+}
+
+// FORMS
+input {
+	border:none;
+}
+
+// BUTTONS
+.tool {
+	padding:10px 13px;
+	margin:5px 0px;
+	border-radius:5px;
+	.smallcaps;
+	&.inverted {
+		background:black;
+		color:white;
+	}
+	&.large {
+		padding:15px 15px;
+	}
+}
+
+.green {
+	background-color:@lightgreen;
+	color:white;
+}
+
+// TOOLBAR & TOOLS
+.toolbar {
+	&.left {
+		margin:0px 30px;
+	}
+
+	&.right {
+		position:fixed;
+		right:0px;
+		margin:20px;
+		}
+
+	&.vertical {
+		width:50px;
+	}
+
+	ul.tools {
+		list-style:none; padding:0em;
+		display:inline-block;
+		li {
+			a {		
+				display:block;
+				.tool;
+				&:hover {
+					.inverted;
+				}
+			}
+		}	
+	}
+}
