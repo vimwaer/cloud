@@ -97,6 +97,10 @@ input {
   padding: 0em;
   display: inline-block;
 }
+.toolbar ul.tools li {
+  display: inline-block;
+  margin-right: 5px;
+}
 .toolbar ul.tools li a {
   display: block;
   padding: 10px 13px;
