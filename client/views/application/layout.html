@@ -1,0 +1,23 @@
+<template name="layout">
+<div class="fixed">
+			<!-- Branding -->
+			<a class="logo" href="{{pathFor 'postsList'}}"></a>
+
+			<!-- Toolbar left -->
+			<div class="toolbar vertical left hidden">
+				<ul class="tools">
+					<li><a href="" class="tool"><span class="glyphicon glyphicon-search"></span></a></li>
+					<li><a href="" class="tool"><span class="glyphicon glyphicon-off"></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Toolbar right -->
+		<div class="toolbar right">
+			<ul class="tools">
+				<li><a href="" class="tool green"><span class="glyphicon glyphicon-off"></span></a></li>
+			</ul>
+		</div>
+
+	      {{> yield}}
+</template>
